@@ -2,12 +2,12 @@
 #
 
 # C compiler
-CC = mpicc
+CC = gcc
 CFLAGS = -g -O3
 LIBS = -lm
-SRC = knn_mpi.c
+SRC = serial_mpi.c
 TARGET = ./bin/
-EXE = knn_mpi
+EXE = serial_mpi
 
 RM_TARGET = rm -f $(TARGET)* 
 RM_PRINT = rm -f database/*.txt
